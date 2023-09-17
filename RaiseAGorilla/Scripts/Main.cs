@@ -326,12 +326,8 @@ namespace RaiseAGorilla.Scripts
                     if (!currentCosmetic.boughtOnce && cash >= currentCosmetic.cosmeticCost)
                     {
                         cash -= currentCosmetic.cosmeticCost;
-                        currentCosmetic.cosmetic.SetActive(true);
+                        upgrades[2].value += currentCosmetic.addValue;
                         currentCosmetic.boughtOnce = true;
-                    }
-                    else if (currentCosmetic.boughtOnce)
-                    {
-                        currentCosmetic.cosmetic.SetActive(true);
                     }
                 }
             }
@@ -396,6 +392,7 @@ namespace RaiseAGorilla.Scripts
         {
             if (currentTab == shopTabs[1] && currentCosmetic.boughtOnce)
             {
+                currentCosmetic.equipped = !currentCosmetic.equipped;
                 currentCosmetic.cosmetic.SetActive(currentCosmetic.equipped);
             }
         }
