@@ -7,7 +7,7 @@ using UnityEngine;
 namespace RaiseAGorilla
 {
     [BepInDependency("dev.auros.bepinex.bepinject")]
-    [BepInPlugin("decalfree.raiseagorilla", "RaiseAGorilla", "1.0.1")]
+    [BepInPlugin("decalfree.raiseagorilla", "RaiseAGorilla", "1.0.2")]
     public class Plugin : BaseUnityPlugin
     {
         public static Plugin Instance { get; private set; }
