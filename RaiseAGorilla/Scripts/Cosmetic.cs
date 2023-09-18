@@ -8,11 +8,11 @@ namespace RaiseAGorilla.Scripts
         public int cosmeticCost;
         public string cosmeticInfo;
         public bool boughtOnce;
-        public float addValue;
+        public int addValue;
         public GameObject cosmetic;
         public bool equipped;
 
-        internal Cosmetic(string cosmeticName, int cosmeticCost, string cosmeticInfo, bool boughtOnce, float addValue, GameObject cosmetic, bool equipped)
+        internal Cosmetic(string cosmeticName, int cosmeticCost, string cosmeticInfo, bool boughtOnce, int addValue, GameObject cosmetic, bool equipped)
         {
             this.cosmeticName = cosmeticName;
             this.cosmeticCost = cosmeticCost;

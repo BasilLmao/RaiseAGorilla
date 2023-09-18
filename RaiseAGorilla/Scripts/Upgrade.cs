@@ -8,9 +8,9 @@
         public int maxAmountCanBuy;
         public string upgradeInfo;
         public bool boughtOnce;
-        public float value;
+        public int value;
 
-        internal Upgrade(string upgradeName, int upgradeCost, int upgradeAmountBought, int maxAmountCanBuy, string upgradeInfo, bool boughtOnce, float value)
+        internal Upgrade(string upgradeName, int upgradeCost, int upgradeAmountBought, int maxAmountCanBuy, string upgradeInfo, bool boughtOnce, int value)
         {
             this.upgradeName = upgradeName;
             this.upgradeCost = upgradeCost;

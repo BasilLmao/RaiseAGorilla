@@ -3,16 +3,16 @@
     [System.Serializable]
     public class PlayerData
     {
-        public float cash;
-        public float cashPerClick;
-        public float cashPerSecond;
+        public int cash;
+        public int cashPerClick;
+        public int cashPerSecond;
         public int currentTimesBoughtCPC;
         public int currentCPCCost;
         public bool boughtCPCOnce;
         public int currentTimesBoughtCPS;
         public int currentCPSCost;
         public bool boughtCPSOnce;
-        public float multiplier;
+        public int multiplier;
         public int currentTimesBoughtMultiplier;
         public int currentMultiplierCost;
         public bool boughtMultiplierOnce;

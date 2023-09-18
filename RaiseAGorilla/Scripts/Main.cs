@@ -10,7 +10,7 @@ namespace RaiseAGorilla.Scripts
 
         internal bool ModInitialized;
 
-        internal float cash = 0f;
+        internal int cash = 0;
 
         private GameObject RaiseAGorilla;
 
@@ -105,16 +105,16 @@ namespace RaiseAGorilla.Scripts
 
             upgrades = new List<Upgrade>
             {
-                new Upgrade("CASH PER CLICK", 25, 0, 25, "GIVES YOU MORE CASH PER CLICK.", false, 1f), // Upgrade Shop Page 0
-                new Upgrade("CASH PER SECOND", 30, 0, 27, "GIVES YOU MORE CASH PER SECOND.", false, 0f), // Upgrade Shop Page 1
-                new Upgrade("MULTIPLIER", 100, 0, 19, "GIVES YOU MORE MULTIPLIER.", false, 1f), // Upgrade Shop Page 2
-                new Upgrade("LIL BILLY", 1250, 0, 1, "???", false, 0f) // Upgrade Shop Page 3
+                new Upgrade("CASH PER CLICK", 25, 0, 25, "GIVES YOU MORE CASH PER CLICK.", false, 1), // Upgrade Shop Page 0
+                new Upgrade("CASH PER SECOND", 30, 0, 27, "GIVES YOU MORE CASH PER SECOND.", false, 0), // Upgrade Shop Page 1
+                new Upgrade("MULTIPLIER", 100, 0, 19, "GIVES YOU MORE MULTIPLIER.", false, 1), // Upgrade Shop Page 2
+                new Upgrade("LIL BILLY", 1250, 0, 1, "???", false, 0) // Upgrade Shop Page 3
             };
 
             cosmetics = new List<Cosmetic>
             {
-                new Cosmetic("BIRTHDAY CAKE I", 1000, "GIVES YOUR GORILLA A BIRTHDAY CAKE HAT FOR THE ONE YEAR ANNIVERSARY OF GORILLA TAG.", false, 5f, BirthdayCake_I, false), // Cosmetic Shop Page 0
-                new Cosmetic("BIRTHDAY CAKE II", 1500, "PUTS A BIRTHDAY CAKE ON THE TABLE FOR THE TWO YEAR ANNIVERSARY OF GORILLA TAG.", false, 10f, BirthdayCake_II, false) // Cosmetic Shop Page 1
+                new Cosmetic("BIRTHDAY CAKE I", 1000, "GIVES YOUR GORILLA A BIRTHDAY CAKE HAT FOR THE ONE YEAR ANNIVERSARY OF GORILLA TAG.", false, 5, BirthdayCake_I, false), // Cosmetic Shop Page 0
+                new Cosmetic("BIRTHDAY CAKE II", 1500, "PUTS A BIRTHDAY CAKE ON THE TABLE FOR THE TWO YEAR ANNIVERSARY OF GORILLA TAG.", false, 10, BirthdayCake_II, false) // Cosmetic Shop Page 1
             };
 
             shopTabs = new List<string>
@@ -314,7 +314,7 @@ namespace RaiseAGorilla.Scripts
                         }
                         else
                         {
-                            currentUpgrade.value *= 2f;
+                            currentUpgrade.value *= 2;
                         }
                         currentUpgrade.boughtOnce = true;
                         currentUpgrade.upgradeCost *= 2;
